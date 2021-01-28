@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5be8afc6-0418-44cd-8f14-49537d15a304" name="Default Changelist" comment="revised the coroutine, revised the averageof rating" />
+    <list default="true" id="5be8afc6-0418-44cd-8f14-49537d15a304" name="Default Changelist" comment="revised">
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611837446212</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="revised the coroutine, revised the averageof rating">
+      <created>1611837486607</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1611837486607</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -126,26 +135,26 @@
     <option name="LAST_COMMIT_MESSAGE" value="revised the coroutine, revised the averageof rating" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1358" height="159" key="GridCell.Tab.0.bottom" timestamp="1611837340496">
+    <state width="1358" height="159" key="GridCell.Tab.0.bottom" timestamp="1611837791379">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state width="1398" height="99" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1611642347843" />
-    <state width="1358" height="159" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1611837340496" />
-    <state width="1358" height="159" key="GridCell.Tab.0.center" timestamp="1611837340478">
+    <state width="1358" height="159" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1611837791379" />
+    <state width="1358" height="159" key="GridCell.Tab.0.center" timestamp="1611837791376">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state width="1398" height="99" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1611642347839" />
-    <state width="1358" height="159" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1611837340478" />
-    <state width="1358" height="159" key="GridCell.Tab.0.left" timestamp="1611837340475">
+    <state width="1358" height="159" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1611837791376" />
+    <state width="1358" height="159" key="GridCell.Tab.0.left" timestamp="1611837791375">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state width="1398" height="99" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1611642347838" />
-    <state width="1358" height="159" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1611837340475" />
-    <state width="1358" height="159" key="GridCell.Tab.0.right" timestamp="1611837340486">
+    <state width="1358" height="159" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1611837791375" />
+    <state width="1358" height="159" key="GridCell.Tab.0.right" timestamp="1611837791378">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state width="1398" height="99" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1611642347841" />
-    <state width="1358" height="159" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1611837340486" />
+    <state width="1358" height="159" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1611837791378" />
     <state x="0" y="142" key="Maven.ArtifactSearchDialog" timestamp="1611729901486">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
@@ -156,6 +165,10 @@
     </state>
     <state x="416" y="23" key="SettingsEditor/0.23.1440.797@0.23.1440.797" timestamp="1611836098770" />
     <state x="13" y="23" key="SettingsEditor/0.23.1440.798@0.23.1440.798" timestamp="1611634094876" />
+    <state x="331" y="207" key="Vcs.Push.Dialog.v2" timestamp="1611837492935">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="331" y="207" key="Vcs.Push.Dialog.v2/0.23.1440.797@0.23.1440.797" timestamp="1611837492935" />
     <state x="651" y="321" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1611836083422">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
