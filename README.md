@@ -1,7 +1,10 @@
 # Vertx Coroutine Kotlin
 
 
-A test to swap the JDBC to MongoDB written by Kotlin.
+test：
+1. to swap the JDBC to MongoDB written by Kotlin.
+2. add two route API : router.put("/movie/:id"), router.delete("/movie/:id")
+
 All the enviornment were refered from https://github.com/vert-x3/vertx-examples/tree/4.x/kotlin-examples/coroutines
 
 ## establish the connection with MongoDB 
