@@ -19,32 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5be8afc6-0418-44cd-8f14-49537d15a304" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/com_mongodb_mongo_java_driver_2_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kotlin-coroutines-examples.iml" beforeDir="false" afterPath="$PROJECT_DIR$/kotlin-coroutines-examples.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/movierating/App.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/movierating/App.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/kotlin-coroutines-examples.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/movierating/App$coroutineHandler$1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/movierating/App$coroutineHandler$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/movierating/App$deleteMovie$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/movierating/App$getMovie$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/movierating/App$getRating$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/movierating/App$insertRating$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/movierating/App$putMovie$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/movierating/App$rateMovie$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/movierating/App$start$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/movierating/App$start$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/movierating/App$start$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/movierating/App$start$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/movierating/App$start$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/movierating/App$start$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/movierating/App$start$8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/movierating/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/movierating/MainKt$main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/movierating/MainKt$main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/movierating/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/movierating/MainKt.class" afterDir="false" />
-    </list>
+    <list default="true" id="5be8afc6-0418-44cd-8f14-49537d15a304" name="Default Changelist" comment="revised the coroutine, revised the averageof rating" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -111,6 +86,28 @@
       <option name="presentableId" value="Default" />
       <updated>1611632754093</updated>
     </task>
+    <task id="LOCAL-00001" summary="revised the coroutine, revised the averageof rating">
+      <created>1611837376037</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1611837376038</updated>
+    </task>
+    <task id="LOCAL-00002" summary="revised the coroutine, revised the averageof rating">
+      <created>1611837438278</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1611837438279</updated>
+    </task>
+    <task id="LOCAL-00003" summary="revised the coroutine, revised the averageof rating">
+      <created>1611837446212</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1611837446212</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -124,27 +121,31 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="revised the coroutine, revised the averageof rating" />
+    <option name="LAST_COMMIT_MESSAGE" value="revised the coroutine, revised the averageof rating" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1358" height="151" key="GridCell.Tab.0.bottom" timestamp="1611835167916">
+    <state width="1358" height="159" key="GridCell.Tab.0.bottom" timestamp="1611837340496">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state width="1398" height="99" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1611642347843" />
-    <state width="1358" height="151" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1611835167916" />
-    <state width="1358" height="151" key="GridCell.Tab.0.center" timestamp="1611835167913">
+    <state width="1358" height="159" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1611837340496" />
+    <state width="1358" height="159" key="GridCell.Tab.0.center" timestamp="1611837340478">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state width="1398" height="99" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1611642347839" />
-    <state width="1358" height="151" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1611835167913" />
-    <state width="1358" height="151" key="GridCell.Tab.0.left" timestamp="1611835167910">
+    <state width="1358" height="159" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1611837340478" />
+    <state width="1358" height="159" key="GridCell.Tab.0.left" timestamp="1611837340475">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state width="1398" height="99" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1611642347838" />
-    <state width="1358" height="151" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1611835167910" />
-    <state width="1358" height="151" key="GridCell.Tab.0.right" timestamp="1611835167914">
+    <state width="1358" height="159" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1611837340475" />
+    <state width="1358" height="159" key="GridCell.Tab.0.right" timestamp="1611837340486">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state width="1398" height="99" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1611642347841" />
-    <state width="1358" height="151" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1611835167914" />
+    <state width="1358" height="159" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1611837340486" />
     <state x="0" y="142" key="Maven.ArtifactSearchDialog" timestamp="1611729901486">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
