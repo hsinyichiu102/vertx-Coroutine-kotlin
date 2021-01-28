@@ -1,7 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="5be8afc6-0418-44cd-8f14-49537d15a304" name="Default Changelist" comment="" />
+    <list default="true" id="5be8afc6-0418-44cd-8f14-49537d15a304" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/com_mongodb_mongo_java_driver_2_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kotlin-coroutines-examples.iml" beforeDir="false" afterPath="$PROJECT_DIR$/kotlin-coroutines-examples.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/movierating/App.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/movierating/App.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/kotlin-coroutines-examples.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/movierating/App$coroutineHandler$1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/movierating/App$coroutineHandler$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/movierating/App$deleteMovie$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/movierating/App$getMovie$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/movierating/App$getRating$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/movierating/App$insertRating$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/movierating/App$putMovie$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/movierating/App$rateMovie$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/movierating/App$start$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/movierating/App$start$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/movierating/App$start$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/movierating/App$start$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/movierating/App$start$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/movierating/App$start$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/movierating/App$start$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/movierating/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/movierating/MainKt$main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/movierating/MainKt$main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/movierating/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/movierating/MainKt.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +57,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1naeiES1ebioDDGIsUAntmVFSYr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -26,10 +73,12 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.48505747" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
@@ -64,42 +113,57 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1358" height="152" key="GridCell.Tab.0.bottom" timestamp="1611759341826">
+    <state width="1358" height="151" key="GridCell.Tab.0.bottom" timestamp="1611835167916">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state width="1398" height="99" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1611642347843" />
-    <state width="1358" height="152" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1611759341826" />
-    <state width="1358" height="152" key="GridCell.Tab.0.center" timestamp="1611759341825">
+    <state width="1358" height="151" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1611835167916" />
+    <state width="1358" height="151" key="GridCell.Tab.0.center" timestamp="1611835167913">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state width="1398" height="99" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1611642347839" />
-    <state width="1358" height="152" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1611759341825" />
-    <state width="1358" height="152" key="GridCell.Tab.0.left" timestamp="1611759341824">
+    <state width="1358" height="151" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1611835167913" />
+    <state width="1358" height="151" key="GridCell.Tab.0.left" timestamp="1611835167910">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state width="1398" height="99" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1611642347838" />
-    <state width="1358" height="152" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1611759341824" />
-    <state width="1358" height="152" key="GridCell.Tab.0.right" timestamp="1611759341826">
+    <state width="1358" height="151" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1611835167910" />
+    <state width="1358" height="151" key="GridCell.Tab.0.right" timestamp="1611835167914">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state width="1398" height="99" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1611642347841" />
-    <state width="1358" height="152" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1611759341826" />
+    <state width="1358" height="151" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1611835167914" />
     <state x="0" y="142" key="Maven.ArtifactSearchDialog" timestamp="1611729901486">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state x="0" y="142" key="Maven.ArtifactSearchDialog/0.23.1440.797@0.23.1440.797" timestamp="1611729901486" />
     <state x="0" y="142" key="Maven.ArtifactSearchDialog/0.23.1440.798@0.23.1440.798" timestamp="1611634121095" />
-    <state x="13" y="23" key="SettingsEditor" timestamp="1611634094876">
-      <screen x="0" y="23" width="1440" height="798" />
+    <state x="416" y="23" key="SettingsEditor" timestamp="1611836098770">
+      <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state x="416" y="23" key="SettingsEditor/0.23.1440.797@0.23.1440.797" timestamp="1611633471414" />
+    <state x="416" y="23" key="SettingsEditor/0.23.1440.797@0.23.1440.797" timestamp="1611836098770" />
     <state x="13" y="23" key="SettingsEditor/0.23.1440.798@0.23.1440.798" timestamp="1611634094876" />
-    <state x="282" y="315" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1611634082807">
-      <screen x="0" y="23" width="1440" height="798" />
+    <state x="651" y="321" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1611836083422">
+      <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state x="651" y="321" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.23.1440.797@0.23.1440.797" timestamp="1611633469924" />
+    <state x="651" y="321" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.23.1440.797@0.23.1440.797" timestamp="1611836083422" />
     <state x="282" y="315" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.23.1440.798@0.23.1440.798" timestamp="1611634082807" />
     <state x="282" y="315" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.23.1440.801@0.23.1440.801" timestamp="1611633825895" />
+    <state x="385" y="144" width="670" height="676" key="search.everywhere.popup" timestamp="1611834261214">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="385" y="144" width="670" height="676" key="search.everywhere.popup/0.23.1440.797@0.23.1440.797" timestamp="1611834261214" />
   </component>
 </project>

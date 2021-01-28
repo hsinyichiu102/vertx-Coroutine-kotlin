@@ -1,6 +1,7 @@
 package movierating
 
 import io.vertx.core.Vertx
+import io.vertx.core.json.JsonArray
 import io.vertx.core.json.JsonObject
 import io.vertx.ext.mongo.MongoClient
 import io.vertx.ext.web.Route
@@ -12,6 +13,9 @@ import io.vertx.kotlin.coroutines.CoroutineVerticle
 import io.vertx.kotlin.coroutines.await
 import io.vertx.kotlin.coroutines.dispatcher
 import kotlinx.coroutines.launch
+
+
+
 
 /**
  * version: 2021-01-27
@@ -42,22 +46,24 @@ class App : CoroutineVerticle() {
 
     client = MongoClient.createShared(vertx, mongoconfig)
 
+
    /*create the collection and insert some original data inside*/
     var product= json {
       obj(
-          "movie_id" to "indianajones",
-          "title" to "Indiana Jones",
-          "rating" to listOf(4,6,3,9))}
+              "movie_id" to "indianajones",
+              "title" to "Indiana Jones",
+              "rating" to listOf(4, 6, 3, 9))}
 
-    client.save("movie",product){id->print("Inserted id: ${id.result()}")}
+    client.save("movie", product).await()
 
     var product2 = json{
       obj(
               "movie_id" to "starwars",
               "title" to "Star Wars",
-              "rating" to listOf(1,5,9,10))}
-    client.insert("movie",product2){id->print("Inserted id: ${id.result()}")}
+              "rating" to listOf(1, 5, 9, 10))}
+    client.insert("movie", product2).await()
     print("document saved")
+
 
     /* !problem: tried to put all the objects in one json as below,
     *           but only the last document("indianajones") can be stored in the collection,
@@ -91,78 +97,57 @@ class App : CoroutineVerticle() {
     }
 
   /**
-   * putMovie: to put a new movie into the movie collection
+   * putMovie: to update a new movie into the movie collection
    */
   suspend fun putMovie(ctx: RoutingContext) {
-      val movie_id = ctx.request().params().get("movie_id") //
-      val title = ctx.request().params().get("title")  // assume that title and id are received and it is totally new one in the collection
-      val movie = JsonObject().put("title", title).put("movie_id", movie_id)
-      val response = JsonObject()
-      client.insert("movie", movie) { res ->
-        if (res.succeeded()) {
-          response.put("success", true)
-                  .put("movie", res.result())
+      val movie_id = ctx.pathParam("movie_id") //
+      val query = JsonObject().put("movie_id", movie_id)
+      val update= json{
+      obj(
+              "movie_id" to movie_id,
+              "title" to ctx.queryParam("title")[0],
+              "rating" to ctx.queryParam("rating")[0]
 
-          ctx.response().setStatusCode(200)
-                  .putHeader("Content-Type", "application/json")
-                  .end(response.encode())
-        } else {
-          //ctx.response().end(res.cause().toString())
-          response.put("success", false)
-                  .put("error", res.cause().message)
+      )}
 
-          ctx.response().setStatusCode(400)
-                  .putHeader("Content-Type", "application/json")
-                  .end(response.encode())
-        }
+      val result= client.findOneAndUpdate("movie", query, update).await()
+      if(result.containsKey(movie_id)){
+          ctx.response().setStatusCode(200).end()
       }
-    }
+      else{
+          ctx.response().setStatusCode(404).end()
+      }
+
+  }
 
   /**
-   * deleteMovie: to delete a document from the collection
+   * deleteMovie: to delete from the collection
    */
   suspend fun deleteMovie(ctx: RoutingContext) {
-      val movie_id = ctx.request().params().get("movie_id")
-      val title = ctx.request().params().get("title")
-      val query = JsonObject().put("title", title).put("movie_id", movie_id)
-      client.removeDocument("movie", query) { res ->
-        if (res.succeeded()) {
-          ctx.response().setStatusCode(200)
-                  .putHeader("Content-Type", "application/json")
-                  .end("Deleted successfully")
-        } else {
-          ctx.response().setStatusCode(500)
-                  .end("Failed to delete the movie")
-        }
+      val movie_id = ctx.pathParam("movie_id")
+      val query = JsonObject().put("movie_id", movie_id)
+
+      client.removeDocument("movie", query).await()
+      ctx.response().setStatusCode(200).end()
       }
-    }
+
 
 
   /**
    * getMovie: to find out a document from the collection
    */
   suspend fun getMovie(ctx: RoutingContext) {
-      val movie_id = ctx.request().params().get("movie_id")
-      val title = ctx.request().params().get("title")
-      val query = JsonObject().put("title", title).put("movie_id", movie_id)
-      val response = JsonObject()
-      client.find("movie", query) { res ->
-        if (res.succeeded()) {
-          response.put("success", true)
-                  .put("movie", res.result())
+      val movie_id = ctx.pathParam("movie_id")
 
-          ctx.response().setStatusCode(200)
-                  .putHeader("Content-Type", "application/json")
-                  .end(response.encode())
-
-        } else {
-          response.put("success", false)
-                  .put("error", res.cause().message)
-
-          ctx.response().setStatusCode(400)
-                  .putHeader("Content-Type", "application/json")
-                  .end(response.encode())
-        }
+      val query = JsonObject().put("movie_id", movie_id)
+      val result = client.find("movie", query).await()
+      if(result.contains(movie_id)){
+          ctx.response().end(json {
+              obj("movie_id" to movie_id,
+                      "title" to result.get(0).getString("title")).encode()
+          })
+      }else{
+          ctx.response().setStatusCode(404).end()
       }
     }
 
@@ -172,51 +157,31 @@ class App : CoroutineVerticle() {
    * 2. adding the new rating score from the front-end to the rating list
    * 3. using the helper "insertRating" to update the document
    */
+
   suspend fun rateMovie(ctx: RoutingContext) {
       val movie_id = ctx.pathParam("movie_id")
+      val rating = Integer.parseInt(ctx.queryParam("rating")[0])
       val query = JsonObject().put("movie_id", movie_id)
-      var response = JsonObject()
-      client.find("movie",query){res->
-        if(res.succeeded()){
-          val arr = res.result().get(0).getJsonArray("rating").toList()
-          insertRating(query,arr,ctx)
-        }
-        else{
-          response.put("success", false)
-                  .put("error", res.cause().message)
 
-          ctx.response().setStatusCode(400)
-                  .putHeader("Content-Type", "application/json")
-                  .end(response.encode())
-        }
+      val find_result = client.find("movie", query).await()
+
+      var rating_update:JsonArray
+
+      if(find_result.contains(movie_id)){
+          rating_update= find_result.get(0).getJsonArray("rating").add(rating)
+
+          val result= client.findOneAndUpdate("movie", query, JsonObject().put("rating", rating_update)).await()
+          if(result.containsKey(movie_id)){
+              ctx.response().setStatusCode(200).end()
+          }else{
+              ctx.response().setStatusCode(404).end()
+          }
+      }else{
+          ctx.response().setStatusCode(500).end("cannot find the movie")
       }
-    }
 
-  /**
-   * insertRating: a helper method to update the rating result to the document
-   * and response the success result back
-   * !bug here: always get trouble when using findOneAndUpdate
-   */
-  fun insertRating(query:JsonObject, arr:List<Any>,ctx: RoutingContext){
-      var response = JsonObject()
 
-      client.findOneAndUpdate("movie",query,JsonObject().put("rating", arr)){res->
-        if(res.succeeded()){
-          response.put("success",true).put("movie",res.result())
-
-          ctx.response().setStatusCode(200)
-                  .putHeader("Content-Type", "application/json")
-                  .end(response.encode())
-        }else{
-        response.put("success", false)
-                .put("error", res.cause().message)
-
-        ctx.response().setStatusCode(400)
-                .putHeader("Content-Type", "application/json")
-                .end(response.encode())
-        }
-      }
-    }
+  }
 
   /**
    * getRating: getting the average score of the movie_id
@@ -227,33 +192,15 @@ class App : CoroutineVerticle() {
   suspend fun getRating(ctx: RoutingContext) {
       val movie_id = ctx.pathParam("movie_id")
       val query = JsonObject().put("movie_id", movie_id)
-      var response = JsonObject()
-      client.find("movie", query) { res ->
-        if (res.succeeded()) {
-          val arr = res.result().get(0).getJsonArray("rating").asIterable()
-          var sum=0.0
-          var length=0.0
-          for(i in arr){
-            length++
-            sum+= i.toString().toInt()
-          }
-          val average= sum/length
+      val rating_arr=client.find("movie", query).await()
+      val score = client.aggregate("rating_avg",rating_arr.get(0).getJsonArray("rating"))
 
-          response.put("succee",true).put("movie",JsonObject().put("avg",average))
-
-          ctx.response().setStatusCode(200)
-                  .putHeader("Content-Type", "application/json")
-                  .end(response.encode())
-
-        }else{
-          response.put("success", false)
-                  .put("error", res.cause().message)
-
-          ctx.response().setStatusCode(400)
-                  .putHeader("Content-Type", "application/json")
-                  .end(response.encode())
-        }
-      }
+      ctx.response().end(json{
+          obj(
+                  "movie_id" to movie_id,
+                  "rating_avg" to score)
+          .encode()
+      })
     }
 
     /**
@@ -271,6 +218,11 @@ class App : CoroutineVerticle() {
       }
     }
   }
+
+
+
+
+
 
 
 
