@@ -1,0 +1,139 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"BranchesTreeState\">\n    <expand>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"GROUP_NODE:origin\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n    </expand>\n    <select />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"5be8afc6-0418-44cd-8f14-49537d15a304\" name=\"Default Changelist\" comment=\"revised the coroutine, revised the averageof rating\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Kotlin Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$/..\" />\n  </component>\n  <component name=\"ProjectId\" id=\"1naeiES1ebioDDGIsUAntmVFSYr\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"Downloaded.Files.Path.Enabled\" value=\"false\" />\n    <property name=\"Repository.Attach.Annotations\" value=\"false\" />\n    <property name=\"Repository.Attach.JavaDocs\" value=\"false\" />\n    <property name=\"Repository.Attach.Sources\" value=\"false\" />\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\n    <property name=\"SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\n    <property name=\"project.structure.last.edited\" value=\"Problems\" />\n    <property name=\"project.structure.proportion\" value=\"0.15\" />\n    <property name=\"project.structure.side.proportion\" value=\"0.48505747\" />\n    <property name=\"settings.editor.selected.configurable\" value=\"preferences.lookFeel\" />\n  </component>\n  <component name=\"RunManager\">\n    <configuration name=\"MainKt\" type=\"JetRunConfigurationType\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"kotlin-coroutines-examples\" />\n      <option name=\"VM_PARAMETERS\" />\n      <option name=\"PROGRAM_PARAMETERS\" />\n      <option name=\"ALTERNATIVE_JRE_PATH_ENABLED\" value=\"false\" />\n      <option name=\"ALTERNATIVE_JRE_PATH\" />\n      <option name=\"PASS_PARENT_ENVS\" value=\"true\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"movierating.MainKt\" />\n      <option name=\"WORKING_DIRECTORY\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Application.MainKt\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SvnConfiguration\">\n    <configuration />\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"5be8afc6-0418-44cd-8f14-49537d15a304\" name=\"Default Changelist\" comment=\"\" />\n      <created>1611632754093</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1611632754093</updated>\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"revised the coroutine, revised the averageof rating\">\n      <created>1611837376037</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1611837376038</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"revised the coroutine, revised the averageof rating\">\n      <created>1611837438278</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1611837438279</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"revised the coroutine, revised the averageof rating\">\n      <created>1611837446212</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1611837446212</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"4\" />\n    <servers />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"revised the coroutine, revised the averageof rating\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"revised the coroutine, revised the averageof rating\" />\n  </component>\n  <component name=\"WindowStateProjectService\">\n    <state width=\"1358\" height=\"159\" key=\"GridCell.Tab.0.bottom\" timestamp=\"1611837340496\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"797\" />\n    </state>\n    <state width=\"1398\" height=\"99\" key=\"GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900\" timestamp=\"1611642347843\" />\n    <state width=\"1358\" height=\"159\" key=\"GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797\" timestamp=\"1611837340496\" />\n    <state width=\"1358\" height=\"159\" key=\"GridCell.Tab.0.center\" timestamp=\"1611837340478\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"797\" />\n    </state>\n    <state width=\"1398\" height=\"99\" key=\"GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900\" timestamp=\"1611642347839\" />\n    <state width=\"1358\" height=\"159\" key=\"GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797\" timestamp=\"1611837340478\" />\n    <state width=\"1358\" height=\"159\" key=\"GridCell.Tab.0.left\" timestamp=\"1611837340475\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"797\" />\n    </state>\n    <state width=\"1398\" height=\"99\" key=\"GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900\" timestamp=\"1611642347838\" />\n    <state width=\"1358\" height=\"159\" key=\"GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797\" timestamp=\"1611837340475\" />\n    <state width=\"1358\" height=\"159\" key=\"GridCell.Tab.0.right\" timestamp=\"1611837340486\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"797\" />\n    </state>\n    <state width=\"1398\" height=\"99\" key=\"GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900\" timestamp=\"1611642347841\" />\n    <state width=\"1358\" height=\"159\" key=\"GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797\" timestamp=\"1611837340486\" />\n    <state x=\"0\" y=\"142\" key=\"Maven.ArtifactSearchDialog\" timestamp=\"1611729901486\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"797\" />\n    </state>\n    <state x=\"0\" y=\"142\" key=\"Maven.ArtifactSearchDialog/0.23.1440.797@0.23.1440.797\" timestamp=\"1611729901486\" />\n    <state x=\"0\" y=\"142\" key=\"Maven.ArtifactSearchDialog/0.23.1440.798@0.23.1440.798\" timestamp=\"1611634121095\" />\n    <state x=\"416\" y=\"23\" key=\"SettingsEditor\" timestamp=\"1611836098770\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"797\" />\n    </state>\n    <state x=\"416\" y=\"23\" key=\"SettingsEditor/0.23.1440.797@0.23.1440.797\" timestamp=\"1611836098770\" />\n    <state x=\"13\" y=\"23\" key=\"SettingsEditor/0.23.1440.798@0.23.1440.798\" timestamp=\"1611634094876\" />\n    <state x=\"651\" y=\"321\" key=\"com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD\" timestamp=\"1611836083422\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"797\" />\n    </state>\n    <state x=\"651\" y=\"321\" key=\"com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.23.1440.797@0.23.1440.797\" timestamp=\"1611836083422\" />\n    <state x=\"282\" y=\"315\" key=\"com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.23.1440.798@0.23.1440.798\" timestamp=\"1611634082807\" />\n    <state x=\"282\" y=\"315\" key=\"com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.23.1440.801@0.23.1440.801\" timestamp=\"1611633825895\" />\n    <state x=\"385\" y=\"144\" width=\"670\" height=\"676\" key=\"search.everywhere.popup\" timestamp=\"1611834261214\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"797\" />\n    </state>\n    <state x=\"385\" y=\"144\" width=\"670\" height=\"676\" key=\"search.everywhere.popup/0.23.1440.797@0.23.1440.797\" timestamp=\"1611834261214\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision 51b69276e3003fbe56b9b4565099821e3c307ee9)
++++ .idea/workspace.xml	(date 1611837791893)
+@@ -19,7 +19,9 @@
+     <select />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="5be8afc6-0418-44cd-8f14-49537d15a304" name="Default Changelist" comment="revised the coroutine, revised the averageof rating" />
++    <list default="true" id="5be8afc6-0418-44cd-8f14-49537d15a304" name="Default Changelist" comment="revised">
++      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -107,7 +109,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1611837446212</updated>
+     </task>
+-    <option name="localTasksCounter" value="4" />
++    <task id="LOCAL-00004" summary="revised the coroutine, revised the averageof rating">
++      <created>1611837486607</created>
++      <option name="number" value="00004" />
++      <option name="presentableId" value="LOCAL-00004" />
++      <option name="project" value="LOCAL" />
++      <updated>1611837486607</updated>
++    </task>
++    <option name="localTasksCounter" value="5" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -126,26 +135,26 @@
+     <option name="LAST_COMMIT_MESSAGE" value="revised the coroutine, revised the averageof rating" />
+   </component>
+   <component name="WindowStateProjectService">
+-    <state width="1358" height="159" key="GridCell.Tab.0.bottom" timestamp="1611837340496">
++    <state width="1358" height="159" key="GridCell.Tab.0.bottom" timestamp="1611837791379">
+       <screen x="0" y="23" width="1440" height="797" />
+     </state>
+     <state width="1398" height="99" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1611642347843" />
+-    <state width="1358" height="159" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1611837340496" />
+-    <state width="1358" height="159" key="GridCell.Tab.0.center" timestamp="1611837340478">
++    <state width="1358" height="159" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1611837791379" />
++    <state width="1358" height="159" key="GridCell.Tab.0.center" timestamp="1611837791376">
+       <screen x="0" y="23" width="1440" height="797" />
+     </state>
+     <state width="1398" height="99" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1611642347839" />
+-    <state width="1358" height="159" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1611837340478" />
+-    <state width="1358" height="159" key="GridCell.Tab.0.left" timestamp="1611837340475">
++    <state width="1358" height="159" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1611837791376" />
++    <state width="1358" height="159" key="GridCell.Tab.0.left" timestamp="1611837791375">
+       <screen x="0" y="23" width="1440" height="797" />
+     </state>
+     <state width="1398" height="99" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1611642347838" />
+-    <state width="1358" height="159" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1611837340475" />
+-    <state width="1358" height="159" key="GridCell.Tab.0.right" timestamp="1611837340486">
++    <state width="1358" height="159" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1611837791375" />
++    <state width="1358" height="159" key="GridCell.Tab.0.right" timestamp="1611837791378">
+       <screen x="0" y="23" width="1440" height="797" />
+     </state>
+     <state width="1398" height="99" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1611642347841" />
+-    <state width="1358" height="159" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1611837340486" />
++    <state width="1358" height="159" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1611837791378" />
+     <state x="0" y="142" key="Maven.ArtifactSearchDialog" timestamp="1611729901486">
+       <screen x="0" y="23" width="1440" height="797" />
+     </state>
+@@ -156,6 +165,10 @@
+     </state>
+     <state x="416" y="23" key="SettingsEditor/0.23.1440.797@0.23.1440.797" timestamp="1611836098770" />
+     <state x="13" y="23" key="SettingsEditor/0.23.1440.798@0.23.1440.798" timestamp="1611634094876" />
++    <state x="331" y="207" key="Vcs.Push.Dialog.v2" timestamp="1611837492935">
++      <screen x="0" y="23" width="1440" height="797" />
++    </state>
++    <state x="331" y="207" key="Vcs.Push.Dialog.v2/0.23.1440.797@0.23.1440.797" timestamp="1611837492935" />
+     <state x="651" y="321" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1611836083422">
+       <screen x="0" y="23" width="1440" height="797" />
+     </state>
+Index: ../README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#Vertx Coroutine Kotlin\n\n\nA test to swap the JDBC to MongoDB written by Kotlin.\nAll the enviornment were refered from https://github.com/vert-x3/vertx-examples/tree/4.x/kotlin-examples/coroutines\n\n## establish the connection with MongoDB \n\n>     var config = Vertx.currentContext().config()\n    var uri = config.getString(\"mongo_uri\")\n    if (uri == null) {\n      uri = \"mongodb://localhost:27017\"\n    }\n    var db = config.getString(\"mongo_db\")\n    if (db == null) {\n      db = \"test\"\n    }\n    val mongoconfig = JsonObject().put(\"connection_string\", uri).put(\"db_name\", db)\n\n    client = MongoClient.createShared(vertx, mongoconfig)\n\n## intial document in the MongoDB\n\n> var product= json {\n      obj(\n          \"movie_id\" to \"indianajones\",\n          \"title\" to \"Indiana Jones\",\n          \"rating\" to listOf(4,6,3,9))}\n\n    client.save(\"movie\",product){id->print(\"Inserted id: ${id.result()}\")}\n\n    var product2 = json{\n      obj(\n              \"movie_id\" to \"starwars\",\n              \"title\" to \"Star Wars\",\n              \"rating\" to listOf(1,5,9,10))}\n    client.insert(\"movie\",product2){id->print(\"Inserted id: ${id.result()}\")}\n    print(\"document saved\")\n\n## Route API setting with 5 action\n\n> val router = Router.router(vertx)\n      router.get(\"/movie/:id\").coroutineHandler { ctx -> getMovie(ctx) }\n      router.post(\"/rateMovie/:id\").coroutineHandler { ctx -> rateMovie(ctx) }// post: add a document\n      router.get(\"/getRating/:id\").coroutineHandler { ctx -> getRating(ctx) }// get: get a document or status\n      router.put(\"/movie/:id\").coroutineHandler { ctx -> putMovie(ctx) } // put: using UPDATE to add a new document at a selected position\n      router.delete(\"/movie/:id\").coroutineHandler { ctx -> deleteMovie(ctx) }// delete: delete a selected document\n\n## explianation of 5 main methods\n\n1. putMovie: to put a new movie document into the collection\n2. deleteMovie: to delete a movie document from the collection\n3. getMovie: to find the specific movie from the collection\n4. rateMovie: to provide a score of a movie document\n5. getRating: to get the average of the rating score\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ../README.md	(revision 51b69276e3003fbe56b9b4565099821e3c307ee9)
++++ ../README.md	(date 1611837776197)
+@@ -1,12 +1,15 @@
+-#Vertx Coroutine Kotlin
++# Vertx Coroutine Kotlin
+ 
+ 
+-A test to swap the JDBC to MongoDB written by Kotlin.
++test：
++1. to swap the JDBC to MongoDB written by Kotlin.
++2. add two route API : router.put("/movie/:id"), router.delete("/movie/:id")
++
+ All the enviornment were refered from https://github.com/vert-x3/vertx-examples/tree/4.x/kotlin-examples/coroutines
+ 
+ ## establish the connection with MongoDB 
+ 
+->     var config = Vertx.currentContext().config()
++    var config = Vertx.currentContext().config()
+     var uri = config.getString("mongo_uri")
+     if (uri == null) {
+       uri = "mongodb://localhost:27017"
+@@ -21,7 +24,7 @@
+ 
+ ## intial document in the MongoDB
+ 
+-> var product= json {
++    var product= json {
+       obj(
+           "movie_id" to "indianajones",
+           "title" to "Indiana Jones",
+@@ -37,16 +40,16 @@
+     client.insert("movie",product2){id->print("Inserted id: ${id.result()}")}
+     print("document saved")
+ 
+-## Route API setting with 5 action
++## Route API setting
+ 
+-> val router = Router.router(vertx)
++      val router = Router.router(vertx)
+       router.get("/movie/:id").coroutineHandler { ctx -> getMovie(ctx) }
+       router.post("/rateMovie/:id").coroutineHandler { ctx -> rateMovie(ctx) }// post: add a document
+       router.get("/getRating/:id").coroutineHandler { ctx -> getRating(ctx) }// get: get a document or status
+       router.put("/movie/:id").coroutineHandler { ctx -> putMovie(ctx) } // put: using UPDATE to add a new document at a selected position
+       router.delete("/movie/:id").coroutineHandler { ctx -> deleteMovie(ctx) }// delete: delete a selected document
+ 
+-## explianation of 5 main methods
++## main methods
+ 
+ 1. putMovie: to put a new movie document into the collection
+ 2. deleteMovie: to delete a movie document from the collection
