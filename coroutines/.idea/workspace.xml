@@ -19,9 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5be8afc6-0418-44cd-8f14-49537d15a304" name="Default Changelist" comment="revised">
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-    </list>
+    <list default="true" id="5be8afc6-0418-44cd-8f14-49537d15a304" name="Default Changelist" comment="revised the" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,6 +34,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1naeiES1ebioDDGIsUAntmVFSYr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -116,7 +115,28 @@
       <option name="project" value="LOCAL" />
       <updated>1611837486607</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="revised">
+      <created>1611837892397</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1611837892397</updated>
+    </task>
+    <task id="LOCAL-00006" summary="revised">
+      <created>1611837911676</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1611837911676</updated>
+    </task>
+    <task id="LOCAL-00007" summary="revised the">
+      <created>1611838051541</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1611838051541</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -124,15 +144,30 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="revised the coroutine, revised the averageof rating" />
-    <option name="LAST_COMMIT_MESSAGE" value="revised the coroutine, revised the averageof rating" />
+    <MESSAGE value="revised" />
+    <MESSAGE value="revised the" />
+    <option name="LAST_COMMIT_MESSAGE" value="revised the" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1358" height="159" key="GridCell.Tab.0.bottom" timestamp="1611837791379">
