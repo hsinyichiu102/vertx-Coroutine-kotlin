@@ -1,4 +1,4 @@
-#Vertx Coroutine Kotlin
+# Vertx Coroutine Kotlin
 
 
 A test to swap the JDBC to MongoDB written by Kotlin.
@@ -6,7 +6,7 @@ All the enviornment were refered from https://github.com/vert-x3/vertx-examples/
 
 ## establish the connection with MongoDB 
 
->     var config = Vertx.currentContext().config()
+    var config = Vertx.currentContext().config()
     var uri = config.getString("mongo_uri")
     if (uri == null) {
       uri = "mongodb://localhost:27017"
@@ -21,7 +21,7 @@ All the enviornment were refered from https://github.com/vert-x3/vertx-examples/
 
 ## intial document in the MongoDB
 
-> var product= json {
+    var product= json {
       obj(
           "movie_id" to "indianajones",
           "title" to "Indiana Jones",
@@ -39,7 +39,7 @@ All the enviornment were refered from https://github.com/vert-x3/vertx-examples/
 
 ## Route API setting with 5 action
 
-> val router = Router.router(vertx)
+      val router = Router.router(vertx)
       router.get("/movie/:id").coroutineHandler { ctx -> getMovie(ctx) }
       router.post("/rateMovie/:id").coroutineHandler { ctx -> rateMovie(ctx) }// post: add a document
       router.get("/getRating/:id").coroutineHandler { ctx -> getRating(ctx) }// get: get a document or status
