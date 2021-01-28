@@ -37,7 +37,7 @@ All the enviornment were refered from https://github.com/vert-x3/vertx-examples/
     client.insert("movie",product2){id->print("Inserted id: ${id.result()}")}
     print("document saved")
 
-## Route API setting with 5 action
+## Route API setting
 
       val router = Router.router(vertx)
       router.get("/movie/:id").coroutineHandler { ctx -> getMovie(ctx) }
@@ -46,7 +46,7 @@ All the enviornment were refered from https://github.com/vert-x3/vertx-examples/
       router.put("/movie/:id").coroutineHandler { ctx -> putMovie(ctx) } // put: using UPDATE to add a new document at a selected position
       router.delete("/movie/:id").coroutineHandler { ctx -> deleteMovie(ctx) }// delete: delete a selected document
 
-## explianation of 5 main methods
+## main methods
 
 1. putMovie: to put a new movie document into the collection
 2. deleteMovie: to delete a movie document from the collection
