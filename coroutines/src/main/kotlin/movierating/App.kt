@@ -3,7 +3,7 @@ package movierating
 import io.vertx.core.Vertx
 import io.vertx.core.json.JsonArray
 import io.vertx.core.json.JsonObject
-import io.vertx.ext.mongo.MongoClient
+import io.vertx.ext.mongo.*
 import io.vertx.ext.web.Route
 import io.vertx.ext.web.Router
 import io.vertx.ext.web.RoutingContext
@@ -13,7 +13,6 @@ import io.vertx.kotlin.coroutines.CoroutineVerticle
 import io.vertx.kotlin.coroutines.await
 import io.vertx.kotlin.coroutines.dispatcher
 import kotlinx.coroutines.launch
-
 
 
 
@@ -45,9 +44,8 @@ class App : CoroutineVerticle() {
     val mongoconfig = JsonObject().put("connection_string", uri).put("db_name", db)
 
     client = MongoClient.createShared(vertx, mongoconfig)
-
-
    /*create the collection and insert some original data inside*/
+
     var product= json {
       obj(
               "movie_id" to "indianajones",
@@ -63,6 +61,7 @@ class App : CoroutineVerticle() {
               "rating" to listOf(1, 5, 9, 10))}
     client.insert("movie", product2).await()
     print("document saved")
+
 
 
     /* !problem: tried to put all the objects in one json as below,
@@ -100,6 +99,7 @@ class App : CoroutineVerticle() {
    * putMovie: to update a new movie into the movie collection
    */
   suspend fun putMovie(ctx: RoutingContext) {
+
       val movie_id = ctx.pathParam("movie_id") //
       val query = JsonObject().put("movie_id", movie_id)
       val update= json{
@@ -109,6 +109,8 @@ class App : CoroutineVerticle() {
               "rating" to ctx.queryParam("rating")[0]
 
       )}
+
+
 
       val result= client.findOneAndUpdate("movie", query, update).await()
       if(result.containsKey(movie_id)){
@@ -191,15 +193,15 @@ class App : CoroutineVerticle() {
    */
   suspend fun getRating(ctx: RoutingContext) {
       val movie_id = ctx.pathParam("movie_id")
-      val query = JsonObject().put("movie_id", movie_id)
-      val rating_arr=client.find("movie", query).await()
-      val score = client.aggregate("rating_avg",rating_arr.get(0).getJsonArray("rating"))
+      val query = client.find("movie",JsonObject().put("movie_id", movie_id)).await()
+      // cannot get "$avg" works with this aggregate
+      val score= client.aggregate("average", query.get(0).getJsonArray("rating"))
 
-      ctx.response().end(json{
+      ctx.response().end(json {
           obj(
                   "movie_id" to movie_id,
                   "rating_avg" to score)
-          .encode()
+                  .encode()
       })
     }
 
